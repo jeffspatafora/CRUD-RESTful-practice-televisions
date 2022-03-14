@@ -1,0 +1,27 @@
+### index
+GET http://localhost:3000/tvs
+
+### create
+POST http://localhost:3000/tvs
+Content-Type: application/json
+
+{
+  "brand": "Vizio",
+  "price": 200,
+  "screen_size": "55inch",
+  "resolution": "1080"
+}
+
+### show
+GET http://localhost:3000/tvs/4
+
+### update
+PATCH http://localhost:3000/tvs/4
+Content-Type: application/json
+
+{
+  "price": 900
+}
+
+### destroy
+DELETE http://localhost:3000/tvs/5
